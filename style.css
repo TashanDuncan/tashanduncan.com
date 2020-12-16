@@ -1,6 +1,12 @@
 .jumbotron{
     background-color: white;
     margin-bottom: 0;
+    height: 100vh;
+}
+
+
+#socials i {
+    margin: 10px
 }
 
 @media screen and (max-width: 767px) {
@@ -8,4 +14,9 @@
       width: 100%;
       display: block;
     }
+
+    .contrib-legend {
+        padding: 0;
+    }
+
   }
