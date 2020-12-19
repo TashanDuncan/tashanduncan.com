@@ -1,3 +1,40 @@
+/* The sidebar menu */
+.sidenav {
+
+    width: 160px; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    top: 30%; /* Stay at the top */
+    left: 0;
+    background-color: #0179FD; /* Black */
+    padding-top: 30px;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  }
+  
+  /* The navigation menu links */
+  .sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #b6b6b6;
+    display: block;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+
+  ​.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+
 .jumbotron{
     background-color: white;
     margin-bottom: 0;
@@ -7,6 +44,11 @@
 
 #socials i {
     margin: 10px
+}
+
+#projects .card{
+    cursor: pointer;
+
 }
 
 @media screen and (max-width: 767px) {
