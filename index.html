@@ -14,7 +14,7 @@
 <body>
 <header>
   <!-- Side navigation -->
-  ​<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+  ​<span style="font-size:30px;cursor:pointer" onclick="openNav()" id="hamburger">&#9776;</span>
   <div id="mySidenav" class="sidenav">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" >&times;</a>
     <a href="#">About</a>
@@ -48,16 +48,7 @@
 </header>
 <main>
 
-  <div class="py-5 bg-light">
-    <h3 class="pb-3 text-center">GitHub Activity</h3>
-    <div class="container">
-      <!-- Prepare a container for your calendar. -->
-      <div class="calendar">
-        <!-- Loading stuff -->
-        Loading the data just for you.
-      </div>
-    </div>
-  </div>
+
   <div class="container text-center">
     <h3 class="mt-5">Technologies/Languages I Know & Use!</h3>
     <div class="d-flex p-3 mb-3 justify-content-around align-items-around flex-wrap bd-highlight">
@@ -114,7 +105,7 @@
     <div class="row">
       <div class="col-md-4">
         <div class="card mb-4 shadow-sm">
-          <img src="./images/projects/amadeusresponsive.JPG" class="card-img-top" height="300px"></svg>
+          <a href="https://tashanduncan.github.io/Unit07/" target="_blank"><img src="./images/projects/amadeusresponsive.JPG" class="card-img-top" height="300px"></a>
           <div class="card-body">
             <h5 class="card-title text-center">WebApp Dashboard</h5>
             <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -130,7 +121,7 @@
       </div>
       <div class="col-md-4">
         <div class="card mb-4 shadow-sm">
-          <img src="./images/projects/employee.JPG" class="card-img-top" height="300px"></svg>
+          <a href="https://tashanduncan.github.io/Unit08/" target="_blank"><img src="./images/projects/employee.JPG" class="card-img-top" height="300px"></a>
           <div class="card-body">
             <h5 class="card-title text-center">Employee Directory (Fetch API)</h5>
             <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -146,7 +137,7 @@
       </div>
       <div class="col-md-4">
         <div class="card mb-4 shadow-sm">
-          <img src="./images/projects/sharesave.JPG" class="card-img-top" height="300px"></svg>
+          <a href="https://sharesavecalculator.com/" target="_blank"><img src="./images/projects/sharesave.JPG" class="card-img-top" height="300px"></a>
           <div class="card-body">
             <h5 class="card-title text-center">ShareSave Calculator</h5>
             <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -162,7 +153,7 @@
       </div>
       <div class="col-md-4">
         <div class="card mb-4 shadow-sm">
-          <img src="./images/projects/subs.JPG" class="card-img-top" height="300px"></svg>
+          <a href="https://standupbestrong.com/" target="_blank"><img src="./images/projects/subs.JPG" class="card-img-top" height="300px"></a>
           <div class="card-body">
             <h5 class="card-title text-center">My WordPress Blog</h5>
             <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -177,7 +168,7 @@
       </div>
       <div class="col-md-4">
         <div class="card mb-4 shadow-sm">
-          <img src="./images/projects/hangman.JPG" class="card-img-top" height="300px"></svg>
+          <a href="https://tashanduncan.github.io/Unit06/" target="_blank"><img src="./images/projects/hangman.JPG" class="card-img-top" height="300px"></a>
           <div class="card-body">
             <h5 class="card-title text-center">Game Show App</h5>
             <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -193,7 +184,7 @@
       </div>
       <div class="col-md-4">
         <div class="card mb-4 shadow-sm">
-          <img src="./images/projects/imagegallery.JPG" class="card-img-top" height="300px"></svg>
+          <a href="https://tashanduncan.github.io/Unit05/" target="_blank"><img src="./images/projects/imagegallery.JPG" class="card-img-top" height="300px"></a>
           <div class="card-body">
             <h5 class="card-title text-center">Interactive Photo Gallery</h5>
             <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -210,7 +201,16 @@
     </div>
   </div>
 </div>
-
+<div class="py-5">
+  <h3 class="pb-3 text-center">GitHub Activity</h3>
+  <div class="container">
+    <!-- Prepare a container for your calendar. -->
+    <div class="calendar">
+      <!-- Loading stuff -->
+      Loading the data just for you.
+    </div>
+  </div>
+</div>
 
 </main>
 <footer>
