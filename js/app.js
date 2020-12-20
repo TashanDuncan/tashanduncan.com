@@ -33,7 +33,7 @@ function Scroller(section, behavior, block) {
 
 
 function scrollFunction() {
-  if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
+  if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
     topbutton.style.display = "block";
   } else {
     topbutton.style.display = "none";
