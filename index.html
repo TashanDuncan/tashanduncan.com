@@ -12,6 +12,7 @@
     <script src="https://kit.fontawesome.com/bac66377db.js" crossorigin="anonymous"></script>
   </head>
 <body>
+
 <header>
   <!-- Side navigation -->
   ​<span style="font-size:30px;cursor:pointer" onclick="openNav()" id="hamburger">&#9776;</span>
@@ -22,7 +23,7 @@
     <a id="projects">Projects</a>
     <a id="github">GitHub</a>
   </div>
-  <section class="jumbotron text-center d-flex flex-column justify-content-center">
+  <section class="jumbotron text-center d-flex flex-column justify-content-center" id="header">
     <div class="container">
       <img class="rounded-circle m-4" src="./images/0.jpg" alt="Tashan Duncan">
       <h1>Tashan Duncan</h1>
@@ -229,11 +230,7 @@
 
 </main>
 <footer>
-<div class="container">
-  <p class="float-right">
-    <a href="#">Back to top</a>
-  </p>
-</div>
+  <button onclick="topFunction()" id="topBtn" title="Go to top">&#8593; <span id="topText">Top</span></button>
 </footer>
 <script>
   //enable responsive functionality
