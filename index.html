@@ -1,241 +1,481 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
     <title>Tashan Duncan - Web Developer</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
     <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
-    <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"/>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/bac66377db.js" crossorigin="anonymous"></script>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/bac66377db.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
-<body>
+  <body>
+    <header>
+      <!-- Side navigation -->
+      ​<span
+        style="font-size: 30px; cursor: pointer"
+        onclick="openNav()"
+        id="hamburger"
+        >&#9776;</span
+      >
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+          >&times;</a
+        >
+        <a id="aboutMe">About Me</a>
+        <a id="skills">Skills</a>
+        <a id="projects">Projects</a>
+        <a id="github">GitHub</a>
+      </div>
+      <section
+        class="jumbotron text-center d-flex flex-column justify-content-center"
+        id="header"
+      >
+        <div class="container">
+          <img
+            class="rounded-circle m-4"
+            src="./images/0.jpg"
+            alt="Tashan Duncan"
+          />
+          <h1>Tashan Duncan</h1>
+          <h3>Web Developer</h3>
+          <div id="socials">
+            <a
+              href="https://www.linkedin.com/in/tashan-duncan-5a93a7140/"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><i class="fab fa-linkedin fa-3x"></i
+            ></a>
+            <a
+              href="https://github.com/TashanDuncan"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><i class="fab fa-github-square fa-3x"></i
+            ></a>
+            <a
+              href="https://twitter.com/tashan_duncan"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><i class="fab fa-twitter-square fa-3x"></i
+            ></a>
+            <a
+              href="https://www.youtube.com/channel/UCxCYZOs4ezcljeq8JSo3-Fg"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><i class="fab fa-youtube-square fa-3x"></i
+            ></a>
+            <a
+              href="https://www.instagram.com/tashanduncan/"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><i class="fab fa-instagram-square fa-3x"></i
+            ></a>
+            <a href="mailto:tashanduncan1994@gmail.com"
+              ><i class="fas fa-envelope-square fa-3x"></i
+            ></a>
+          </div>
+          <p class="lead text-capitalize">
+            I &#10084; bringing ideas to life with code!
+          </p>
+          <p>
+            <a
+              href="mailto:tashanduncan1994@gmail.com"
+              class="btn btn-primary my-2"
+              >Contact Me</a
+            >
+            <a href="#" class="btn btn-secondary my-2">Download CV</a>
+          </p>
+          <p>
+            <button class="btn btn-outline-primary" id="projectsBtn">
+              View Projects &darr;
+            </button>
+          </p>
+        </div>
+      </section>
+    </header>
+    <main>
+      <section class="py-5 bg-light" id="aboutSection">
+        <h3 class="pb-3 text-center">About Me</h3>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg text-center py-3">
+              <img
+                src="./images/tashan.jpg"
+                class="rounded"
+                alt="Tashan Duncan"
+                height="300"
+              />
+            </div>
 
-<header>
-  <!-- Side navigation -->
-  ​<span style="font-size:30px;cursor:pointer" onclick="openNav()" id="hamburger">&#9776;</span>
-  <div id="mySidenav" class="sidenav">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" >&times;</a>
-    <a id="aboutMe">About Me</a>
-    <a id="skills">Skills</a>
-    <a id="projects">Projects</a>
-    <a id="github">GitHub</a>
-  </div>
-  <section class="jumbotron text-center d-flex flex-column justify-content-center" id="header">
-    <div class="container">
-      <img class="rounded-circle m-4" src="./images/0.jpg" alt="Tashan Duncan">
-      <h1>Tashan Duncan</h1>
-      <h3>Web Developer</h3>
-      <div id="socials">
-        <a href="https://www.linkedin.com/in/tashan-duncan-5a93a7140/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin fa-3x"></i></a>
-        <a href="https://github.com/TashanDuncan" target="_blank" rel="noopener noreferrer"><i class="fab fa-github-square fa-3x"></i></a>
-        <a href="https://twitter.com/tashan_duncan" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter-square fa-3x"></i></a>
-        <a href="https://www.youtube.com/channel/UCxCYZOs4ezcljeq8JSo3-Fg" target="_blank" rel="noopener noreferrer"><i class="fab fa-youtube-square fa-3x"></i></a>
-        <a href="https://www.instagram.com/tashanduncan/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram-square fa-3x"></i></a>
-        <a href = "mailto: tashanduncan1994@gmail.com"><i class="fas fa-envelope-square fa-3x"></i></a>
-      </div>
-      <p class="lead text-capitalize"> I &#10084 bringing ideas to life with code!</p>
-      <p>
-        <a href="mailto: tashanduncan1994@gmail.com" class="btn btn-primary my-2">Contact Me</a>
-        <a href="#" class="btn btn-secondary my-2">Download CV</a>
-      </p>
-      <p>
-      <button type="button" class="btn btn-outline-primary" id="projectsBtn">View Projects &darr;</button>
-      </p>
-    </div>
-  </section>
-</header>
-<main>
-  <section class="py-5  bg-light" id="aboutSection">
-    <h3 class="pb-3 text-center">About Me</h3>
-    <div class="container">
-      <div class="row">
-        <div class="col-lg text-center py-3">
-          <img src="./images/tashan.jpg" class="rounded" alt="Tashan Duncan" height="300px">
+            <div class="col-lg">
+              <h4 class="text-center py-2">Lorem Ipsum</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetcur adipisicing elit. Maxime
+                commodi iure soluta eum velit odit nesciunt laborum ullam ab
+                pariatur ratione, fugit natus quos dignissimos recusandae unde
+                nemo reiciendis minima.
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Architecto unde voluptatibus eos, deserunt libero sunt
+                perferendis minima voluptas laboriosam harum quaerat quis
+                quisquam quibusdam officia nesciunt eveniet facere, sed sequi?
+              </p>
+            </div>
+          </div>
         </div>
-      
-        <div class="col-lg">
-        <h4 class="text-center py-2">Lorem Ipsum</h4>
-        <p>Lorem ipsum dolor sit amet consectetcur adipisicing elit. Maxime commodi iure soluta eum velit odit nesciunt laborum ullam ab pariatur ratione, fugit natus quos dignissimos recusandae unde nemo reiciendis minima.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto unde voluptatibus eos, deserunt libero sunt perferendis minima voluptas laboriosam harum quaerat quis quisquam quibusdam officia nesciunt eveniet facere, sed sequi?</p>
-      </div>
-    </div>
-   </div>
-  </section>
+      </section>
 
-  <section class="container text-center" id="skillsSection">
-    <h3 class="mt-5">Technologies/Languages I Know & Use!</h3>
-    <div class="d-flex p-3 mb-3 justify-content-around align-items-around flex-wrap bd-highlight">
-      <div>
-        <img src="./images/logos/HTML5_Badge_512.png" class="m-2" alt="..." height="100px">
-        <p class="text-muted">HTML</p>
-      </div>
-      <div>      
-        <img src="./images/logos/css-131-722685.png" class="m-2" alt="..." height="100px">
-        <p class="text-muted">CSS</p>
-      </div>
-      <div> 
-        <img src="./images/logos/js-logo.png" class="m-2" alt="..." height="100px">
-        <p class="text-muted">JavaScript</p>
-      </div>
-      <div>      
-        <img src="./images/logos/1280px-Sass_Logo_Color.svg.png" class="m-2" alt="..." height="100px">
-        <p class="text-muted">Sass</p>
-      </div>
-      <div>    
-        <img src="./images/logos/WordPress_blue_logo.svg.png" class="m-2" alt="..." height="100px">
-        <p class="text-muted">WordPress</p>
-      </div>
-      <div>    
-        <img src="./images/logos/0__rAD9NgK7l6KSlNc.png" class="m-2" alt="..." height="100px">
-        <p class="text-muted">Bootstrap</p>
-      </div>
-      <div>    
-        <img src="./images/logos/Git-Icon-1788C.png" class="m-2" alt="..." height="100px">
-        <p class="text-muted">Git</p>
-      </div>
-      <div>    
-        <img src="./images/logos/5847f98fcef1014c0b5e48c0.png" class="m-2" alt="..." height="100px">
-        <p class="text-muted">GitHub</p>
-      </div>
-      <div>    
-        <img src="./images/logos/ic_analytics.svg" class="m-2" alt="..." height="100px">
-        <p class="text-muted">Google Analytics</p>
-      </div>
-      <div>    
-        <img src="./images/logos/vsc.png" class="m-2" alt="..." height="100px">
-        <p class="text-muted">Visual Studio Code</p>
-      </div>
-      <div>    
-        <img src="./images/logos/chrome-dev-logo-icon.png" class="m-2" alt="..." height="100px">
-        <p class="text-muted">Chrome Dev Tools</p>
-      </div>
-    </div>
-  </section>
+      <section class="container text-center" id="skillsSection">
+        <h3 class="mt-5">Technologies/Languages I Know & Use!</h3>
+        <div
+          class="d-flex p-3 mb-3 justify-content-around align-items-around flex-wrap bd-highlight"
+        >
+          <div>
+            <img
+              src="./images/logos/HTML5_Badge_512.png"
+              class="m-2"
+              alt="HTML Logo"
+              height="100"
+            />
+            <p class="text-muted">HTML</p>
+          </div>
+          <div>
+            <img
+              src="./images/logos/css-131-722685.png"
+              class="m-2"
+              alt="CSS Logo"
+              height="100"
+            />
+            <p class="text-muted">CSS</p>
+          </div>
+          <div>
+            <img
+              src="./images/logos/js-logo.png"
+              class="m-2"
+              alt="JavaScript Logo"
+              height="100"
+            />
+            <p class="text-muted">JavaScript</p>
+          </div>
+          <div>
+            <img
+              src="./images/logos/1280px-Sass_Logo_Color.svg.png"
+              class="m-2"
+              alt="Sass Logo"
+              height="100"
+            />
+            <p class="text-muted">Sass</p>
+          </div>
+          <div>
+            <img
+              src="./images/logos/WordPress_blue_logo.svg.png"
+              class="m-2"
+              alt="WordPress Logo"
+              height="100"
+            />
+            <p class="text-muted">WordPress</p>
+          </div>
+          <div>
+            <img
+              src="./images/logos/0__rAD9NgK7l6KSlNc.png"
+              class="m-2"
+              alt="Bootstrap Logo"
+              height="100"
+            />
+            <p class="text-muted">Bootstrap</p>
+          </div>
+          <div>
+            <img
+              src="./images/logos/Git-Icon-1788C.png"
+              class="m-2"
+              alt="Git Logo"
+              height="100"
+            />
+            <p class="text-muted">Git</p>
+          </div>
+          <div>
+            <img
+              src="./images/logos/5847f98fcef1014c0b5e48c0.png"
+              class="m-2"
+              alt="GitHub Logo"
+              height="100"
+            />
+            <p class="text-muted">GitHub</p>
+          </div>
+          <div>
+            <img
+              src="./images/logos/ic_analytics.svg"
+              class="m-2"
+              alt="Google Analytics Logo"
+              height="100"
+            />
+            <p class="text-muted">Google Analytics</p>
+          </div>
+          <div>
+            <img
+              src="./images/logos/vsc.png"
+              class="m-2"
+              alt="..."
+              height="100"
+            />
+            <p class="text-muted">Visual Studio Code</p>
+          </div>
+          <div>
+            <img
+              src="./images/logos/chrome-dev-logo-icon.png"
+              class="m-2"
+              alt="Chrome Developer Tools Logo"
+              height="100"
+            />
+            <p class="text-muted">Chrome Dev Tools</p>
+          </div>
+        </div>
+      </section>
 
-<section class="album py-5 bg-light" id="projectsSection">
-  <h3 class="pb-3 text-center">My Projects</h3>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-4">
-        <div class="card mb-4 shadow-sm">
-          <a href="https://tashanduncan.github.io/Unit07/" target="_blank"><img src="./images/projects/amadeusresponsive.JPG" class="card-img-top" height="300px"></a>
-          <div class="card-body">
-            <h5 class="card-title text-center">WebApp Dashboard</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            <div class="d-flex justify-content-around align-items-center">
-        
-                <a href="https://tashanduncan.github.io/Unit07/" target="_blank"><button type="button" class="btn btn-md btn-outline-secondary" >View Live</button></a>
-                <a href="https://github.com/TashanDuncan/Unit07" target="_blank"><button type="button" class="btn btn-md btn-outline-secondary">View Code</button></a>
-                <!--  to be created <button type="button" class="btn btn-md btn-outline-primary">More info</button> -->
-              
+      <section class="album py-5 bg-light" id="projectsSection">
+        <h3 class="pb-3 text-center">My Projects</h3>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card mb-4 shadow-sm">
+                <a href="https://tashanduncan.github.io/Unit07/" target="_blank"
+                  ><img
+                    src="./images/projects/amadeusresponsive.JPG"
+                    class="card-img-top"
+                    height="300"
+                    alt="WebApp Dashboard Project"
+                /></a>
+                <div class="card-body">
+                  <h5 class="card-title text-center">WebApp Dashboard</h5>
+                  <p class="card-text">
+                    This is a wider card with supporting text below as a natural
+                    lead-in to additional content. This content is a little bit
+                    longer.
+                  </p>
+                  <div class="d-flex justify-content-around align-items-center">
+                    <a
+                      href="https://tashanduncan.github.io/Unit07/"
+                      target="_blank"
+                      class="btn btn-md btn-outline-secondary"
+                      >View Live
+                    </a>
+                    <a
+                      href="https://github.com/TashanDuncan/Unit07"
+                      target="_blank"
+                      class="btn btn-md btn-outline-secondary"
+                      >View Code
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4 shadow-sm">
+                <a href="https://tashanduncan.github.io/Unit08/" target="_blank"
+                  ><img
+                    src="./images/projects/employee.JPG"
+                    class="card-img-top"
+                    height="300"
+                    alt="Employee Directory Project"
+                /></a>
+                <div class="card-body">
+                  <h5 class="card-title text-center">
+                    Employee Directory (Fetch API)
+                  </h5>
+                  <p class="card-text">
+                    This is a wider card with supporting text below as a natural
+                    lead-in to additional content. This content is a little bit
+                    longer.
+                  </p>
+                  <div class="d-flex justify-content-around align-items-center">
+                    <a
+                      href="https://tashanduncan.github.io/Unit08/"
+                      target="_blank"
+                      class="btn btn-md btn-outline-secondary"
+                      >View Live
+                    </a>
+                    <a
+                      href="https://github.com/TashanDuncan/Unit08"
+                      target="_blank"
+                      class="btn btn-md btn-outline-secondary"
+                      >View Code
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4 shadow-sm">
+                <a href="https://sharesavecalculator.com/" target="_blank"
+                  ><img
+                    src="./images/projects/sharesave.JPG"
+                    class="card-img-top"
+                    height="300"
+                    alt="sharessave calculator project"
+                /></a>
+                <div class="card-body">
+                  <h5 class="card-title text-center">ShareSave Calculator</h5>
+                  <p class="card-text">
+                    This is a wider card with supporting text below as a natural
+                    lead-in to additional content. This content is a little bit
+                    longer.
+                  </p>
+                  <div class="d-flex justify-content-around align-items-center">
+                    <a
+                      href="https://sharesavecalculator.com/"
+                      target="_blank"
+                      class="btn btn-md btn-outline-secondary"
+                      >View Live
+                    </a>
+                    <a
+                      href="https://github.com/TashanDuncan/the-sharesave-calculator"
+                      target="_blank"
+                      class="btn btn-md btn-outline-secondary"
+                      >View Code
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4 shadow-sm">
+                <a href="https://standupbestrong.com/" target="_blank"
+                  ><img
+                    src="./images/projects/subs.JPG"
+                    class="card-img-top"
+                    height="300"
+                    alt="stand up be strong project"
+                /></a>
+                <div class="card-body">
+                  <h5 class="card-title text-center">My WordPress Blog</h5>
+                  <p class="card-text">
+                    This is a wider card with supporting text below as a natural
+                    lead-in to additional content. This content is a little bit
+                    longer.
+                  </p>
+                  <div class="d-flex justify-content-around align-items-center">
+                    <a
+                      href="https://standupbestrong.com/"
+                      target="_blank"
+                      class="btn btn-md btn-outline-secondary"
+                      >View Live
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4 shadow-sm">
+                <a href="https://tashanduncan.github.io/Unit06/" target="_blank"
+                  ><img
+                    src="./images/projects/hangman.JPG"
+                    class="card-img-top"
+                    height="300"
+                    alt="Game Show app Project"
+                /></a>
+                <div class="card-body">
+                  <h5 class="card-title text-center">Game Show App</h5>
+                  <p class="card-text">
+                    This is a wider card with supporting text below as a natural
+                    lead-in to additional content. This content is a little bit
+                    longer.
+                  </p>
+                  <div class="d-flex justify-content-around align-items-center">
+                    <a
+                      href="https://tashanduncan.github.io/Unit06/"
+                      target="_blank"
+                      class="btn btn-md btn-outline-secondary"
+                      >View Live</a
+                    >
+                    <a
+                      href="https://github.com/TashanDuncan/Unit06"
+                      target="_blank"
+                      class="btn btn-md btn-outline-secondary"
+                      >View Code</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4 shadow-sm">
+                <a href="https://tashanduncan.github.io/Unit05/" target="_blank"
+                  ><img
+                    src="./images/projects/imagegallery.JPG"
+                    class="card-img-top"
+                    height="300"
+                    alt="interactive Photo Gallery project"
+                /></a>
+                <div class="card-body">
+                  <h5 class="card-title text-center">
+                    Interactive Photo Gallery
+                  </h5>
+                  <p class="card-text">
+                    This is a wider card with supporting text below as a natural
+                    lead-in to additional content. This content is a little bit
+                    longer.
+                  </p>
+                  <div class="d-flex justify-content-around align-items-center">
+                    <a
+                      href="https://tashanduncan.github.io/Unit05/"
+                      target="_blank"
+                      class="btn btn-md btn-outline-secondary"
+                      >View Live
+                    </a>
+                    <a
+                      href="https://github.com/TashanDuncan/Unit05"
+                      target="_blank"
+                      class="btn btn-md btn-outline-secondary"
+                      >View Code
+                    </a>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="col-md-4">
-        <div class="card mb-4 shadow-sm">
-          <a href="https://tashanduncan.github.io/Unit08/" target="_blank"><img src="./images/projects/employee.JPG" class="card-img-top" height="300px"></a>
-          <div class="card-body">
-            <h5 class="card-title text-center">Employee Directory (Fetch API)</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            <div class="d-flex justify-content-around align-items-center">
-        
-              <a href="https://tashanduncan.github.io/Unit08/" target="_blank"><button type="button" class="btn btn-md btn-outline-secondary" >View Live</button></a>
-              <a href="https://github.com/TashanDuncan/Unit08" target="_blank"><button type="button" class="btn btn-md btn-outline-secondary">View Code</button></a>
-              <!--  to be created <button type="button" class="btn btn-md btn-outline-primary">More info</button> -->
-            
-          </div>
+      </section>
+      <section class="py-5" id="githubSection">
+        <h3 class="pb-3 text-center">GitHub Activity</h3>
+        <div class="container">
+          <!-- Prepare a container for your calendar. -->
+          <div class="calendar">
+            <!-- Loading stuff -->
+            Loading the data just for you.
           </div>
         </div>
-      </div>
-      <div class="col-md-4">
-        <div class="card mb-4 shadow-sm">
-          <a href="https://sharesavecalculator.com/" target="_blank"><img src="./images/projects/sharesave.JPG" class="card-img-top" height="300px"></a>
-          <div class="card-body">
-            <h5 class="card-title text-center">ShareSave Calculator</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            <div class="d-flex justify-content-around align-items-center">
-        
-              <a href="https://sharesavecalculator.com/" target="_blank"><button type="button" class="btn btn-md btn-outline-secondary" >View Live</button></a>
-              <a href="https://github.com/TashanDuncan/the-sharesave-calculator" target="_blank"><button type="button" class="btn btn-md btn-outline-secondary">View Code</button></a>
-              <!--  to be created <button type="button" class="btn btn-md btn-outline-primary">More info</button> -->
-            
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="card mb-4 shadow-sm">
-          <a href="https://standupbestrong.com/" target="_blank"><img src="./images/projects/subs.JPG" class="card-img-top" height="300px"></a>
-          <div class="card-body">
-            <h5 class="card-title text-center">My WordPress Blog</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            <div class="d-flex justify-content-around align-items-center">
-        
-              <a href="https://standupbestrong.com/" target="_blank"><button type="button" class="btn btn-md btn-outline-secondary" >View Live</button></a>
-              <!--  to be created <button type="button" class="btn btn-md btn-outline-primary">More info</button> -->
-            
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="card mb-4 shadow-sm">
-          <a href="https://tashanduncan.github.io/Unit06/" target="_blank"><img src="./images/projects/hangman.JPG" class="card-img-top" height="300px"></a>
-          <div class="card-body">
-            <h5 class="card-title text-center">Game Show App</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            <div class="d-flex justify-content-around align-items-center">
-        
-              <a href="https://tashanduncan.github.io/Unit06/" target="_blank"><button type="button" class="btn btn-md btn-outline-secondary" >View Live</button></a>
-              <a href="https://github.com/TashanDuncan/Unit06" target="_blank"><button type="button" class="btn btn-md btn-outline-secondary">View Code</button></a>
-              <!--  to be created <button type="button" class="btn btn-md btn-outline-primary">More info</button> -->
-            
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="card mb-4 shadow-sm">
-          <a href="https://tashanduncan.github.io/Unit05/" target="_blank"><img src="./images/projects/imagegallery.JPG" class="card-img-top" height="300px"></a>
-          <div class="card-body">
-            <h5 class="card-title text-center">Interactive Photo Gallery</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            <div class="d-flex justify-content-around align-items-center">
-        
-              <a href="https://tashanduncan.github.io/Unit05/" target="_blank"><button type="button" class="btn btn-md btn-outline-secondary" >View Live</button></a>
-              <a href="https://github.com/TashanDuncan/Unit05" target="_blank"><button type="button" class="btn btn-md btn-outline-secondary">View Code</button></a>
-              <!--  to be created <button type="button" class="btn btn-md btn-outline-primary">More info</button> -->
-            
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="py-5" id="githubSection">
-  <h3 class="pb-3 text-center">GitHub Activity</h3>
-  <div class="container">
-    <!-- Prepare a container for your calendar. -->
-    <div class="calendar">
-      <!-- Loading stuff -->
-      Loading the data just for you.
-    </div>
-  </div>
-</section>
-
-</main>
-<footer>
-  <button onclick="topFunction()" id="topBtn" title="Go to top">&#8593; <span id="topText">Top</span></button>
-</footer>
-<script>
-  //enable responsive functionality
-  GitHubCalendar(".calendar", "tashanduncan", { responsive: true });
-</script>
-<script src="./js/app.js"></script>
-</body>
+      </section>
+    </main>
+    <footer>
+      <button onclick="topFunction()" id="topBtn" title="Go to top">
+        &#8593; <span id="topText">Top</span>
+      </button>
+    </footer>
+    <script>
+      //enable responsive functionality
+      GitHubCalendar(".calendar", "tashanduncan", { responsive: true });
+    </script>
+    <script src="./js/app.js"></script>
+  </body>
 </html>

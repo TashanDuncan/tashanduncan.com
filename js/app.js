@@ -2,8 +2,6 @@
 const projectBtn = document.getElementById("projectsBtn");
 const topbutton = document.getElementById("topBtn");
 
-
-
 //SideNav
 const projectsNav = document.getElementById("projects");
 const aboutMeNav = document.getElementById("aboutMe");
@@ -15,7 +13,7 @@ const aboutSection = document.getElementById("aboutSection");
 const skillsSection = document.getElementById("skillsSection");
 const projectsSection = document.getElementById("projectsSection");
 const githubSection = document.getElementById("githubSection");
-const headSection = document.getElementById("header")
+const headSection = document.getElementById("header");
 //Functions
 function openNav() {
   document.getElementById("mySidenav").style.width = "160px";
@@ -31,24 +29,37 @@ function Scroller(section, behavior, block) {
 
 // When the user scrolls down 20px from the top of the document, show the button
 
-
 function scrollFunction() {
-  if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+  if (
+    document.body.scrollTop > 300 ||
+    document.documentElement.scrollTop > 300
+  ) {
     topbutton.style.display = "block";
   } else {
     topbutton.style.display = "none";
   }
 }
 
-
-
- 
 //Event Listeners
-projectBtn.addEventListener("click", () => Scroller(projectsSection, "smooth", "start"));
-projectsNav.addEventListener("click", () => Scroller(projectsSection, "smooth", "start"));
-aboutMeNav.addEventListener("click", () => Scroller(aboutSection, "smooth", "center"));
-skillsNav.addEventListener("click", () => Scroller(skillsSection, "smooth", "center"));
-githubNav.addEventListener("click", () => Scroller(githubSection, "smooth", "center"));
-topbutton.addEventListener("click", () => Scroller(headSection, "smooth", "start"));
+projectBtn.addEventListener("click", () =>
+  Scroller(projectsSection, "smooth", "start")
+);
+projectsNav.addEventListener("click", () =>
+  Scroller(projectsSection, "smooth", "start")
+);
+aboutMeNav.addEventListener("click", () =>
+  Scroller(aboutSection, "smooth", "center")
+);
+skillsNav.addEventListener("click", () =>
+  Scroller(skillsSection, "smooth", "center")
+);
+githubNav.addEventListener("click", () =>
+  Scroller(githubSection, "smooth", "center")
+);
+topbutton.addEventListener("click", () =>
+  Scroller(headSection, "smooth", "start")
+);
 
-window.onscroll = function() {scrollFunction()};
+window.onscroll = function () {
+  scrollFunction();
+};
