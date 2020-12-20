@@ -17,10 +17,10 @@
   ​<span style="font-size:30px;cursor:pointer" onclick="openNav()" id="hamburger">&#9776;</span>
   <div id="mySidenav" class="sidenav">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" >&times;</a>
-    <a href="#">About Me</a>
-    <a href="#">Skills</a>
-    <a href="#">Projects</a>
-    <a href="#">GitHub</a>
+    <a id="aboutMe">About Me</a>
+    <a id="skills">Skills</a>
+    <a id="projects">Projects</a>
+    <a id="github">GitHub</a>
   </div>
   <section class="jumbotron text-center d-flex flex-column justify-content-center">
     <div class="container">
@@ -47,24 +47,24 @@
   </section>
 </header>
 <main>
-  <section class="py-5  bg-light">
+  <section class="py-5  bg-light" id="aboutSection">
     <h3 class="pb-3 text-center">About Me</h3>
     <div class="container">
       <div class="row">
-        <div class="col-lg">
+        <div class="col-lg text-center py-3">
           <img src="./images/tashan.jpg" class="rounded" alt="Tashan Duncan" height="300px">
         </div>
       
         <div class="col-lg">
-        <h4 class="text-center">Lorem Ipsum</h4>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime commodi iure soluta eum velit odit nesciunt laborum ullam ab pariatur ratione, fugit natus quos dignissimos recusandae unde nemo reiciendis minima.</p>
+        <h4 class="text-center py-2">Lorem Ipsum</h4>
+        <p>Lorem ipsum dolor sit amet consectetcur adipisicing elit. Maxime commodi iure soluta eum velit odit nesciunt laborum ullam ab pariatur ratione, fugit natus quos dignissimos recusandae unde nemo reiciendis minima.</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto unde voluptatibus eos, deserunt libero sunt perferendis minima voluptas laboriosam harum quaerat quis quisquam quibusdam officia nesciunt eveniet facere, sed sequi?</p>
       </div>
     </div>
    </div>
   </section>
 
-  <section class="container text-center">
+  <section class="container text-center" id="skillsSection">
     <h3 class="mt-5">Technologies/Languages I Know & Use!</h3>
     <div class="d-flex p-3 mb-3 justify-content-around align-items-around flex-wrap bd-highlight">
       <div>
@@ -114,7 +114,7 @@
     </div>
   </section>
 
-<section class="album py-5 bg-light" id="projects">
+<section class="album py-5 bg-light" id="projectsSection">
   <h3 class="pb-3 text-center">My Projects</h3>
   <div class="container">
     <div class="row">
@@ -216,7 +216,7 @@
     </div>
   </div>
 </section>
-<section class="py-5">
+<section class="py-5" id="githubSection">
   <h3 class="pb-3 text-center">GitHub Activity</h3>
   <div class="container">
     <!-- Prepare a container for your calendar. -->
