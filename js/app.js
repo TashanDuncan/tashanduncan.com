@@ -1,26 +1,27 @@
 //buttons
-const projectBtn = document.getElementById("projectsBtn");
-const topbutton = document.getElementById("topBtn");
+const projectBtn = document.getElementById('projectsBtn');
+const topbutton = document.getElementById('topBtn');
 
 //SideNav
-const projectsNav = document.getElementById("projects");
-const aboutMeNav = document.getElementById("aboutMe");
-const skillsNav = document.getElementById("skills");
-const githubNav = document.getElementById("github");
+const projectsNav = document.getElementById('projects');
+const aboutMeNav = document.getElementById('aboutMe');
+const skillsNav = document.getElementById('skills');
+const githubNav = document.getElementById('github');
 
 //sections
-const aboutSection = document.getElementById("aboutSection");
-const skillsSection = document.getElementById("skillsSection");
-const projectsSection = document.getElementById("projectsSection");
-const githubSection = document.getElementById("githubSection");
-const headSection = document.getElementById("header");
+const aboutSection = document.getElementById('aboutSection');
+const skillsSection = document.getElementById('skillsSection');
+const projectsSection = document.getElementById('projectsSection');
+const githubSection = document.getElementById('githubSection');
+const headSection = document.getElementById('header');
+
 //Functions
 function openNav() {
-  document.getElementById("mySidenav").style.width = "160px";
+  document.getElementById('mySidenav').style.width = '160px';
 }
 
 function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById('mySidenav').style.width = '0';
 }
 
 function Scroller(section, behavior, block) {
@@ -34,30 +35,30 @@ function scrollFunction() {
     document.body.scrollTop > 300 ||
     document.documentElement.scrollTop > 300
   ) {
-    topbutton.style.display = "block";
+    topbutton.style.display = 'block';
   } else {
-    topbutton.style.display = "none";
+    topbutton.style.display = 'none';
   }
 }
 
 //Event Listeners
-projectBtn.addEventListener("click", () =>
-  Scroller(projectsSection, "smooth", "start")
+projectBtn.addEventListener('click', () =>
+  Scroller(projectsSection, 'smooth', 'start')
 );
-projectsNav.addEventListener("click", () =>
-  Scroller(projectsSection, "smooth", "start")
+projectsNav.addEventListener('click', () =>
+  Scroller(projectsSection, 'smooth', 'start')
 );
-aboutMeNav.addEventListener("click", () =>
-  Scroller(aboutSection, "smooth", "center")
+aboutMeNav.addEventListener('click', () =>
+  Scroller(aboutSection, 'smooth', 'center')
 );
-skillsNav.addEventListener("click", () =>
-  Scroller(skillsSection, "smooth", "center")
+skillsNav.addEventListener('click', () =>
+  Scroller(skillsSection, 'smooth', 'center')
 );
-githubNav.addEventListener("click", () =>
-  Scroller(githubSection, "smooth", "center")
+githubNav.addEventListener('click', () =>
+  Scroller(githubSection, 'smooth', 'center')
 );
-topbutton.addEventListener("click", () =>
-  Scroller(headSection, "smooth", "start")
+topbutton.addEventListener('click', () =>
+  Scroller(headSection, 'smooth', 'start')
 );
 
 window.onscroll = function () {
